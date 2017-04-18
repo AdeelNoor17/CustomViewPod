@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        self.addChangedView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,5 +23,12 @@ class ViewController: UIViewController {
     }
 
 
+    
+    func addChangedView() -> Void {
+        
+        
+        let view = CustomView(frame: self.view.bounds)
+        self.view.addSubview(view)
+    }
 }
 
